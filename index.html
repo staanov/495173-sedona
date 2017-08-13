@@ -1,12 +1,107 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE HTML>
+<html>
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="sedona-logo">
+          <img src="img/index-logo.svg" alt="Логотип Седоны">
+        </a>
+        <ul>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Седона</h1>
+        <section class="content">
+          <h2 class="visually-hidden">О Седоне</h2>
+          <p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="first-reason">
+            <p><b>Настоящий городок</b></p>
+            <p>№1</p>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <img src="img/sedona-city.svg" alt="Фото города">
+          </div>
+          <section class="features">
+            <div class="flat">
+              <img src="img/flat-icon.svg" alt="Иконка дома">  
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="food">
+              <img src="img/burger-icon.svg" alt="Иконка бургера">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="gift">
+              <img src="img/gift-icon.svg" alt="Иконка подарка">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
+          </section>
+          <div class="second-reason">
+            <img src="img/sedona-nature.svg" alt="Фото природы">
+            <p><b>Там есть мост дьявола</b></p>
+            <p>№2</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="other-reasons">
+            <ul class="other-reasons-list">
+              <li>
+                <p><b>Небольшая площадь</b></p>
+                <p>№3</p>
+                <p>Все достопримечательности находятся очень близко</p>  
+              </li>
+              <li>
+                <p><b>Красивая дорога</b></p>
+                <p>№4</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>  
+              </li>
+              <li>
+                <p><b>Мало туристов</b></p>
+                <p>№5</p>
+                <p>Большинство едет в Гранд Каньон и топлится там</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="search-form">
+          <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
+          <p><b>Заинтересовались?</b></p>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <form action="hotels.html" method="get">
+            <h3>Поиск гостиницы в Седоне</h3>
+            <label for="arrival">Дата заезда</label>
+            <input type="date" name="arrival-date" id="arrival">
+            <label for="departure">Дата отъезда</label>
+            <input type="date" name="departure-date" id="departure">
+            <label for="adult">Взрослые</label>
+            <input type="number" name="adults" id="adult">
+            <label for="child">Дети</label>
+            <input type="number" name="children" id="child">
+            <button type="submit">Найти</button>
+          </form>
+        </section>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d837438.691415676!2d-111.59739590679331!3d34.92539478761154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1502638291416" width="600" height="450" style="border:0" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer class="main-footer">
+      <p>#VisitSedona</p>
+      <ul class="social-media">
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://facebook.com">Facebook</a></li>
+        <li><a href="https://youtube.com">YouTube</a></li>
+      </ul>
+      <p>Website by <a href="https://htmlacademy.ru">HTML Academy</a></p>
+    </footer>
   </body>
 </html>
