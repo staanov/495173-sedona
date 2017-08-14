@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
@@ -22,71 +22,89 @@
         <h1 class="visually-hidden">Седона</h1>
         <section class="content">
           <h2 class="visually-hidden">О Седоне</h2>
-          <p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
+          <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-          <div class="first-reason">
-            <p><b>Настоящий городок</b></p>
-            <p>№1</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/sedona-city.svg" alt="Фото города">
-          </div>
+          <section class="first-reason">
+            <div class="reasons-text reasons-background">
+              <h3>Настоящий городок</h3>
+              <span class="number-of-reason">№1</span>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="first-reason-background">
+              <img src="img/sedona-city.svg" alt="Фото города">
+            </div>
+          </section>
           <section class="features">
-            <div class="flat">
-              <img src="img/flat-icon.svg" alt="Иконка дома">  
+            <div class="flat">  
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="food">
-              <img src="img/burger-icon.svg" alt="Иконка бургера">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
             <div class="gift">
-              <img src="img/gift-icon.svg" alt="Иконка подарка">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </div>
           </section>
-          <div class="second-reason">
-            <img src="img/sedona-nature.svg" alt="Фото природы">
-            <p><b>Там есть мост дьявола</b></p>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-          <div class="other-reasons">
-            <ul class="other-reasons-list">
-              <li>
-                <p><b>Небольшая площадь</b></p>
-                <p>№3</p>
-                <p>Все достопримечательности находятся очень близко</p>  
-              </li>
-              <li>
-                <p><b>Красивая дорога</b></p>
-                <p>№4</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>  
-              </li>
-              <li>
-                <p><b>Мало туристов</b></p>
-                <p>№5</p>
+          <section class="second-reason">
+            <div class="reasons-text reasons-background">
+              <h3>Там есть мост дьявола</h3>
+              <span class="number-of-reason">№2</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="second-reason-background">
+              <img src="img/sedona-nature.svg" alt="Фото природы">
+            </div>
+          </section>
+          <section class="other-reasons">
+            <section class="third-reason">
+              <div class="reasons-text reasons-background">
+                <h3>Небольшая площадь</h3>
+                <span class="number-of-reason">№3</span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </section>
+            <section class="fourth-reason">
+              <div class="reasons-text reasons-background">
+                <h3>Красивая дорога</h3>
+                <span class="number-of-reason">№4</span>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </section>
+            <section class="fifth-reason">
+              <div class="reasons-text reasons-background">
+                <h3>Мало туристов</h3>
+                <span class="number-of-reason">№5</span>
                 <p>Большинство едет в Гранд Каньон и топлится там</p>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </section>
+          </section>
         </section>
         <section class="search-form">
           <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-          <p><b>Заинтересовались?</b></p>
-          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <b>Заинтересовались?</b>
+          <p>Укажите предполагаемые даты поездки, <!-- br, если не выходит через CSS -->и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p>Поиск гостиницы в Седоне</p>
           <form action="hotels.html" method="get">
-            <h3>Поиск гостиницы в Седоне</h3>
-            <label for="arrival">Дата заезда</label>
-            <input type="date" name="arrival-date" id="arrival">
-            <label for="departure">Дата отъезда</label>
-            <input type="date" name="departure-date" id="departure">
-            <label for="adult">Взрослые</label>
-            <input type="number" name="adults" id="adult">
-            <label for="child">Дети</label>
-            <input type="number" name="children" id="child">
+            <div class="arrival-input">
+              <label for="arrival">Дата заезда</label>
+              <input type="text" name="arrival-date" id="arrival">
+            </div>
+            <div class="departure-input">
+              <label for="departure">Дата отъезда</label>
+              <input type="text" name="departure-date" id="departure">
+            </div>
+            <div class="adult-input">
+              <label for="adult">Взрослые</label>
+              <input type="number" name="adults" id="adult" min="0" max="100" placeholder="0">
+            </div>
+            <div class="child-input">
+              <label for="child">Дети</label>
+              <input type="number" name="children" id="child" min="0" max="100" placeholder="0">
+            </div>
+            <!-- Возможно, глупый вопрос, но нельзя ли кнопки + и - сделать в стилизации? type="number" очень удобен в данном случае, но с ним я не знаю, как вставить эти кнопки -->
             <button type="submit">Найти</button>
           </form>
         </section>
@@ -95,13 +113,19 @@
         </div>
     </main>
     <footer class="main-footer">
-      <p>#VisitSedona</p>
-      <ul class="social-media">
-        <li><a href="https://twitter.com">Twitter</a></li>
-        <li><a href="https://facebook.com">Facebook</a></li>
-        <li><a href="https://youtube.com">YouTube</a></li>
-      </ul>
-      <p>Website by <a href="https://htmlacademy.ru">HTML Academy</a></p>
+      <section class="visit-sedona">
+        <a href="#">#VisitSedona</a>
+      </section>
+      <section class="social-media">
+        <ul class="social-media-list">
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://facebook.com">Facebook</a></li>
+          <li><a href="https://youtube.com">YouTube</a></li>
+        </ul>
+      </section>
+      <section class="site-author">
+        <a href="https://htmlacademy.ru">Website by <img src="img/htmlacademy-logo.svg" alt="Лого HTML Academy"></a>
+      </section>
     </footer>
   </body>
 </html>
