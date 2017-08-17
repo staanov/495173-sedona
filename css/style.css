@@ -3,12 +3,12 @@ body {
     color: black;
 }
 
-.heading-1 {
-    font-size: 2em;
+h1 {
+    font-size: 32px;
     font-weight: bold;
 }
 
-.heading-2 {
-    font-size: 1.5em;
+h2 {
+    font-size: 24px;
     font-weight: bold;
 }
