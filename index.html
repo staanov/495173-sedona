@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,7 +13,7 @@
           <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
       </a>
       <nav class="main-navigation">
-        <ul>
+        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
@@ -19,17 +21,19 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
         <h1 class="visually-hidden">Седона</h1>
         <section class="content">
-          <h2 class="visually-hidden">О Седоне</h2>
-          <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="block-of-text">
+            <h2 class="visually-hidden">О Седоне</h2>
+            <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p><span class="without-bold">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span></p>
+          </div>
           <section class="first-reason">
             <div class="reasons-text reasons-background">
               <h3>Настоящий городок</h3>
-              <span class="number-of-reason">&mdash;№1&mdash;</span>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <span class="number-of-reason without-bold">&mdash;№1&mdash;</span>
+                <p><span class="without-bold">Седона - не аттракцион для туристов, там течет своя жизнь</span></p>
             </div>
             <div class="first-reason-background">
               <img src="img/real-town.jpg" width="800" height="256" alt="Фото города">
@@ -38,22 +42,22 @@
           <section class="features">
             <div class="flat">  
               <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p><span class="without-bold">Рекомендуем пожить в настоящем мотеле, все как в кино!</span></p>
             </div>
             <div class="food">
               <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p><span class="without-bold">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span></p>
             </div>
             <div class="gift">
               <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
+                <p><span class="without-bold">Не только китайского, но и местного производства!</span></p>
             </div>
           </section>
           <section class="second-reason">
             <div class="reasons-text reasons-background">
               <h3>Там есть мост дьявола</h3>
-              <span class="number-of-reason">&mdash;№2&mdash;</span>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <span class="number-of-reason without-bold">&mdash;№2&mdash;</span>
+              <p><span class="without-bold">Да, по нему можно пройти! Если конечно вы осмелитесь</span></p>
             </div>
             <div class="second-reason-background">
               <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фото моста">
@@ -63,57 +67,61 @@
             <section class="third-reason">
               <div class="reasons-text reasons-background">
                 <h3>Небольшая площадь</h3>
-                <span class="number-of-reason">&mdash;№3&mdash;</span>
-                <p>Все достопримечательности находятся очень близко</p>
+                <span class="number-of-reason without-bold">&mdash;№3&mdash;</span>
+                  <p><span class="without-bold">Все достопримечательности находятся очень близко</span></p>
               </div>
             </section>
             <section class="fourth-reason">
               <div class="reasons-text reasons-background">
                 <h3>Красивая дорога</h3>
-                <span class="number-of-reason">&mdash;№4&mdash;</span>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <span class="number-of-reason without-bold">&mdash;№4&mdash;</span>
+                  <p><span class="without-bold">Ехать в Седону из Лас-Вегаса совсем не скучно!</span></p>
               </div>
             </section>
             <section class="fifth-reason">
               <div class="reasons-text reasons-background">
                 <h3>Мало туристов</h3>
-                <span class="number-of-reason">&mdash;№5&mdash;</span>
-                <p>Большинство едет в Гранд Каньон и топлится там</p>
+                <span class="number-of-reason without-bold">&mdash;№5&mdash;</span>
+                  <p><span class="without-bold">Большинство едет в Гранд Каньон и топлится там</span></p>
               </div>
             </section>
           </section>
         </section>
         <section class="search-form">
-          <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-          <b>Заинтересовались?</b>
-          <p>Укажите предполагаемые даты поездки, <!-- br, если не выходит через CSS -->и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#">Поиск гостиницы в Седоне</a>
-          <form action="hotels.html" method="get">
-            <div class="arrival-input">
-              <label for="arrival">Дата заезда</label>
-              <input type="text" name="arrival-date" id="arrival">
-            </div>
-            <div class="departure-input">
-              <label for="departure">Дата отъезда</label>
-              <input type="text" name="departure-date" id="departure">
-            </div>
-            <div class="adult-input">
-              <label for="adult">Взрослые</label>
-              <button type="button">-</button>
-              <input type="number" name="adults" id="adult" min="0" max="100" placeholder="0">
-              <button type="button">+</button>
-            </div>
-            <div class="child-input">
-              <label for="child">Дети</label>
-              <button type="button">-</button>
-              <input type="number" name="children" id="child" min="0" max="100" placeholder="0">
-              <button type="button">+</button>
-            </div>
-            <button type="submit">Найти</button>
-          </form>
+          <div class="block-of-text">
+            <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
+            <b>Заинтересовались?</b>
+            <p><span class="without-bold">Укажите предполагаемые даты поездки, <!-- br, если не выходит через CSS -->и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
+          </div>
+          <div class="searching">
+            <a href="#">Поиск гостиницы в Седоне</a>
+            <form action="hotels.html" method="get" class="order-form">
+              <div class="arrival-input">
+                <label for="arrival">Дата заезда</label>
+                <input type="text" name="arrival-date" id="arrival">
+              </div>
+              <div class="departure-input">
+                <label for="departure">Дата отъезда</label>
+                <input type="text" name="departure-date" id="departure">
+              </div>
+              <div class="adult-input">
+                <label for="adult">Взрослые</label>
+                <button type="button">-</button>
+                <input type="number" name="adults" id="adult" min="0" max="100" placeholder="0">
+                <button type="button">+</button>
+              </div>
+              <div class="child-input">
+                <label for="child">Дети</label>
+                <button type="button">-</button>
+                <input type="number" name="children" id="child" min="0" max="100" placeholder="0">
+                <button type="button">+</button>
+              </div>
+              <button type="submit">Найти</button>
+            </form>
+          </div>
         </section>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d837438.691415676!2d-111.59739590679331!3d34.92539478761154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1502638291416" width="600" height="450" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d837438.691415676!2d-111.59739590679331!3d34.92539478761154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1502638291416" width="100%" height="450" style="border:0" allowfullscreen></iframe>
         </div>
     </main>
     <footer class="main-footer">
