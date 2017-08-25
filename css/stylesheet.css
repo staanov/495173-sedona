@@ -1,0 +1,95 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -5px;
+}
+
+.sprite-calendar-active {
+    width: 21px;
+    height: 22px;
+    background-position: -36px -5px;
+}
+
+.sprite-calendar-hover {
+    width: 21px;
+    height: 22px;
+    background-position: -67px -5px;
+}
+
+.sprite-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -98px -5px;
+}
+
+.sprite-facebook-active {
+    width: 12px;
+    height: 22px;
+    background-position: -120px -5px;
+}
+
+.sprite-facebook-hover {
+    width: 12px;
+    height: 22px;
+    background-position: -142px -5px;
+}
+
+.sprite-htmlacademy {
+    width: 115px;
+    height: 41px;
+    background-position: -5px -37px;
+}
+
+.sprite-htmlacademy-active {
+    width: 115px;
+    height: 41px;
+    background-position: -5px -88px;
+}
+
+.sprite-htmlacademy-hover {
+    width: 115px;
+    height: 41px;
+    background-position: -164px -5px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -130px -56px;
+}
+
+.sprite-twitter-active {
+    width: 17px;
+    height: 15px;
+    background-position: -157px -56px;
+}
+
+.sprite-twitter-hover {
+    width: 17px;
+    height: 15px;
+    background-position: -184px -56px;
+}
+
+.sprite-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -211px -56px;
+}
+
+.sprite-youtube-active {
+    width: 20px;
+    height: 16px;
+    background-position: -241px -56px;
+}
+
+.sprite-youtube-hover {
+    width: 20px;
+    height: 16px;
+    background-position: -130px -82px;
+}
