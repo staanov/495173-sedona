@@ -25,7 +25,8 @@ body {
 }
 
 .mountain-text {
-    padding-left: 370px;
+    display: block;
+    margin: 0 auto;
     padding-top: 135px;
 }
 
@@ -208,7 +209,7 @@ a {
     list-style: none;
 }
 
-.social-media-list a {
+.social-media-list span {
     color: black;
     width: 16px;
     height: 17px;
@@ -331,34 +332,42 @@ a {
 }
 
 .hotel-title:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.hotel-about,
-.hotel-about:hover {
+.hotel-about {
     font-size: 14px;
     line-height: 21px;
     color: white;
     background-color: #81b3d2;
 }
 
-.hotel-order,
-.hotel-order:hover {
+.hotel-about:hover {
+    background-color: #669ec0;
+}
+
+.hotel-order {
     font-size: 14px;
     line-height: 21px;
     color: white;
     background-color: #766357;
 }
 
+.hotel-order:hover {
+    background-color: #604e43;
+}
+
 .hotel-about:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
 }
 
 .hotel-order:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
 }
 
-.social-media-item {
+.social-media-item a {
     position: relative;
     display: block;
     width: 46px;
@@ -371,15 +380,15 @@ a {
     background-size: contain;
 }
 
-.social-media-item:hover {
+.social-media-item a:hover {
     background-color: #669ec0;
 }
 
-.social-media-item:active {
+.social-media-item a:active {
     background-color: #5496bd;
 }
 
-.social-media-item:first-child a {
+.social-media-item:first-child span {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 17px;
@@ -388,7 +397,7 @@ a {
     display: block;
 }
 
-.social-media-item:nth-child(2) a {
+.social-media-item:nth-child(2) span {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 12px;
@@ -397,7 +406,7 @@ a {
     display: block;
 }
 
-.social-media-item:last-child a {
+.social-media-item:last-child span {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 20px;
@@ -406,7 +415,7 @@ a {
     display: block;
 }
 
-.social-media-item:first-child a:hover {
+.social-media-item:first-child span:hover {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 17px;
@@ -415,7 +424,7 @@ a {
     display: block;
 }
 
-.social-media-item:nth-child(2) a:hover {
+.social-media-item:nth-child(2) span:hover {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 12px;
@@ -424,7 +433,7 @@ a {
     display: block;
 }
 
-.social-media-item:last-child a:hover {
+.social-media-item:last-child span:hover {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 20px;
@@ -433,7 +442,7 @@ a {
     display: block;
 }
 
-.social-media-item:first-child a:active {
+.social-media-item:first-child span:active {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 17px;
@@ -442,7 +451,7 @@ a {
     display: block;
 }
 
-.social-media-item:nth-child(2) a:active {
+.social-media-item:nth-child(2) span:active {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 12px;
@@ -451,7 +460,7 @@ a {
     display: block;
 }
 
-.social-media-item:last-child a:active {
+.social-media-item:last-child span:active {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 20px;
@@ -492,32 +501,38 @@ a {
 
 .arrival-input a,
 .departure-input a {
+    background-color: transparent;
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 21px;
     height: 22px;
     background-position: -5px -5px;
     display: inline-block;
+    position: absolute;
 }
 
 .arrival-input a:hover,
 .departure-input a:hover {
+    background-color: transparent;
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 21px;
     height: 22px;
     background-position: -67px -5px;
     display: inline-block;
+    position: absolute;
 }
 
 .arrival-input a:active,
 .departure-input a:active {
+    background-color: transparent;
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     width: 21px;
     height: 22px;
     background-position: -36px -5px;
     display: inline-block;
+    position: absolute;
 }
 
 .site-author span {
