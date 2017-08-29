@@ -11,7 +11,7 @@
     <div class="container">
       <header class="main-header">
         <a class="sedona-logo">
-          <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
+            <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
         </a>
         <nav class="main-navigation">
           <ul class="site-navigation">
@@ -29,61 +29,71 @@
           <img src="img/index-background-mask.png" alt="Белая маска" width="1200" height="58" class="mountain-mask">
         </section>
         <section class="intro-text">
-            <b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
-            <p>Рассмотри 5 причин, по которым Седона лучше, чем Гранд Каньон</p>
+          <b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
+          <p>Рассмотри 5 причин, по которым Седона лучше, чем Гранд Каньон</p>
         </section>
         <section class="content">
           <section class="first-reason reasons-blue">
             <div class="first-reason-text">
-              <h3>Настоящий городок</h3>
-              <p>&mdash;№1&mdash;</p>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <div class="text-squeezer-1">
+                <h3>Настоящий городок</h3>
+                <p>&mdash;№1&mdash;</p>
+                <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
             </div>
             <div class="first-reason-background">
               <img src="img/real-town.jpg" width="800" height="256" alt="Фото города">
             </div>
           </section>
           <section class="features reasons-clear">
-            <div class="feature-item">  
-              <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <div class="feature-item"> 
+              <div class="flat-item">
+                <h3>Жилье</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
             </div>
             <div class="feature-item">
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <div class="food-item">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </div>
             <div class="feature-item">
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
+              <div class="gift-item">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </div>
             </div>
           </section>
           <section class="second-reason reasons-blue">
-            <div class="second-reason-text">
-              <h3>Там есть<br> мост дьявола</h3>
-              <p>&mdash;№2&mdash;</p>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
             <div class="second-reason-background">
               <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фото моста">
             </div>
+            <div class="second-reason-text">
+              <div class="text-squeezer-2">
+                <h3>Там есть<br> мост дьявола</h3>
+                <p>&mdash;№2&mdash;</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
+            </div>
           </section>
           <section class="other-reasons reasons-clear">
-            <div class="third-reason">
-              <div class="reasons-text reasons-background">
+            <div class="reasons-text">
+              <div class="third-reason">
                 <h3>Небольшая площадь</h3>
                 <p>&mdash;№3&mdash;</p>
                 <p>Все достопримечательности находятся очень близко</p>
               </div>
             </div>
-            <div class="fourth-reason">
-              <div class="reasons-text reasons-background">
+            <div class="reasons-text">
+              <div class="fourth-reason">
                 <h3>Красивая дорога</h3>
                 <p>&mdash;№4&mdash;</p>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </div>
-            <div class="fifth-reason">
-              <div class="reasons-text reasons-background">
+            <div class="reasons-text">
+              <div class="fifth-reason">
                 <h3>Мало туристов</h3>
                 <p>&mdash;№5&mdash;</p>
                 <p>Большинство едет в Гранд Каньон и топлится там</p>
@@ -96,9 +106,9 @@
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
             <span>Заинтересовались?</span>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
+            <a href="#">Поиск гостиницы в Седоне</a>
           </div>
           <div class="searching">
-            <a href="#">Поиск гостиницы в Седоне</a>
             <form action="hotels.html" method="get" class="order-form">
               <div class="arrival-input">
                 <label for="arrival">Дата заезда:</label>
@@ -132,23 +142,29 @@
       </main>
       <footer class="main-footer">
         <section class="visit-sedona">
-          <a href="#">#VisitSedona</a>
+          <div class="visit-sedona-wrapper">
+            <a href="#">#VisitSedona</a>
+          </div>
         </section>
         <section class="social-media">
-          <ul class="social-media-list">
-            <li class="social-media-item">
+          <div class="social-media-wrapper">
+            <ul class="social-media-list">
+              <li class="social-media-item">
                 <a href="https://twitter.com"><span>Twitter</span></a>
-            </li>
-            <li class="social-media-item">
+              </li>
+              <li class="social-media-item">
                 <a href="https://facebook.com"><span>Facebook</span></a>
-            </li>
-            <li class="social-media-item">
+              </li>
+              <li class="social-media-item">
                 <a href="https://youtube.com"><span>YouTube</span></a>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="site-author">
-          <span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <div class="site-author-wrapper">
+            <span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          </div>
         </section>
       </footer>
     </div>

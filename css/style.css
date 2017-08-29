@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+.main-header {
+    height: 56px;
+}
+
 .main-navigation {
     font-size: 14px;
     color: black;
@@ -119,17 +123,18 @@ a {
     text-align: center;
 }
 
-.searching a {
+.search-form-intro a {
     color: white;
     background-color: #766357;
+    text-align: center;
 }
 
-.searching a:hover,
-.searching a:focus {
+.search-form-intro a:hover,
+.search-form-intro a:focus {
     background-color: #604e43;
 }
 
-.searching a:active {
+.search-form-intro a:active {
     color: #928a85;
     background-color: #503e33;
 }
@@ -540,4 +545,307 @@ a {
     font-size: 14px;
     margin-right: 10px;
     font-weight: 400;
+}
+
+/* --- Сеточные стили --- */
+
+.main-header {
+    display: block;
+}
+
+.sedona-logo {
+    width: 138px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 605px;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-navigation li {
+    display: block;
+    width: 20%;
+}
+
+.site-navigation li:first-child {
+    text-align: left;
+    padding-left: 72px;
+    margin: 0 auto;
+}
+
+.site-navigation li:nth-child(2) {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.site-navigation li:nth-child(3) {
+    text-align: right;
+    margin-left: auto;
+    margin: 0 auto;
+}
+
+.site-navigation li:last-child {
+    text-align: right;
+    padding-right: 72px;
+    margin-left: auto;
+    margin: 0 auto;
+}
+
+.intro-text {
+    height: 216px;
+}
+
+.intro-text b {
+    display: block;
+    width: 440px;
+    height: 48px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.intro-text p {
+    display: block;
+    width: 490px;
+    height: 13px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.reasons-blue {
+    height: 256px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.first-reason-text {
+    width: 33%;
+    padding-top: 50px;
+}
+
+.first-reason-background {
+    width: 66%;
+}
+
+.second-reason-text {
+    width: 33%;
+    padding-top: 49px;
+}
+
+.second-reason-background {
+    width: 66%;
+}
+
+.text-squeezer-1 {
+    width: 280px;
+    height: 146px;
+    margin: 0 auto;
+}
+
+.text-squeezer-1 h3 {
+    width: 133px;
+    height: 46px;
+    margin: 0 auto;
+}
+
+.text-squeezer-2 {
+    width: 303px;
+    height: 142px;
+    margin: 0 auto;
+}
+
+.features {
+    height: 330px;
+    display: flex;
+}
+
+.feature-item {
+    width: 33%;
+    padding-top: 61px;
+}
+
+.flat-item {
+    width: 252px;
+    height: 81px;
+    margin: 0 auto;
+}
+
+.food-item {
+    width: 285px;
+    height: 79px;
+    margin: 0 auto;
+}
+
+.gift-item {
+    width: 273px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.other-reasons {
+    height: 256px;
+    display: flex;
+}
+
+.reasons-text {
+    width: 33%;
+    padding-top: 50px;
+}
+
+.third-reason {
+    width: 208px;
+    height: 143px;
+    margin: 0 auto;
+}
+
+.third-reason h3 {
+    width: 208px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.fourth-reason {
+    width: 262px;
+    height: 142px;
+    margin: 0 auto;
+}
+
+.fourth-reason h3,
+.fifth-reason h3 {
+    width: 111px;
+    height: 49px;
+    margin: 0 auto;
+}
+
+.fifth-reason {
+    width: 260px;
+    height: 142px;
+    margin: 0 auto;
+}
+
+.main-footer {
+    height: 120px;
+    display: flex;
+    background-color: rgba(248, 250, 245, 0.9);
+}
+
+.visit-sedona {
+    width: 33%;
+    padding-top: 45px;
+}
+
+.social-media {
+    width: 33%;
+    padding-top: 25px;
+}
+
+.site-author {
+    width: 33%;
+    padding-top: 39px;
+}
+
+.visit-sedona-wrapper {
+    width: 136px;
+    height: 16px;
+    margin: 0 auto;
+}
+
+.social-media-wrapper {
+    width: 150px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.site-author-wrapper {
+    width: 200px;
+    height: 41px;
+    margin: 0 auto;
+}
+
+.social-media-list {
+    width: 150px;
+    height: 48px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.filter-form {
+    height: 217px;
+    display: flex;
+}
+
+.filter-form fieldset {
+    border: none;
+}
+
+/*
+.filter-range {
+    width: 330px;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.price-controls {
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+*/
+/*08:22 стилизация сложного фильтра Седоны*/
+
+.sorting {
+    height: 86px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 73px;
+}
+
+.sorting-list {
+    height: auto;
+    display: flex;
 }

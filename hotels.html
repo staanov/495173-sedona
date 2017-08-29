@@ -24,10 +24,10 @@
       </header>
       <main class="container-hotels">
         <h1 class="visually-hidden">Гостиницы в Седоне</h1>
-        <section class="filter">
+        <section class="filter-with-title">
           <h2 class="visually-hidden">Фильтр поиска</h2>
-          <section class="filter-form">
-            <form action="#" method="get">
+          <section class="filter">
+            <form action="#" method="get" class="filter-form">
               <fieldset class="infrastructure">
                 <legend>Инфраструктура:</legend>
                 <ul class="infrastructure-list">
@@ -62,13 +62,25 @@
                   </li>
                 </ul>
              </fieldset>
-             <fieldset class="cost-per-day">
-                <legend>Стоимость в сутки(Р):</legend>
-                <p>От 0</p>
-                <p>До 3000</p>
-                <input type="range" min="0" max="3000" name="price" id="cost">
+             <fieldset class="filter-range">
+                <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+                <div class="price-controls">
+                  <label class="min-price" for="min-price">от</label>
+                  <input type="text" name="min-price" id="min-price" value="0">
+                  <label class="max-price" for="max-price">до</label>
+                  <input type="text" name="max-price" id="max-price" value="3000">
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar">
+                      
+                    </div>  
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button type="submit" class="filter-range-btn">Показать</button>
              </fieldset>
-             <button type="submit">Показать</button>
           </form>
         </section>
       </section>
@@ -124,26 +136,32 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="visit-sedona">
-          <a href="#">#VisitSedona</a>
+        <section class="visit-sedona">
+          <div class="visit-sedona-wrapper">
+            <a href="#">#VisitSedona</a>
+          </div>
         </section>
         <section class="social-media">
-          <ul class="social-media-list">
-            <li class="social-media-item">
+          <div class="social-media-wrapper">
+            <ul class="social-media-list">
+              <li class="social-media-item">
                 <a href="https://twitter.com"><span>Twitter</span></a>
-            </li>
-            <li class="social-media-item">
+              </li>
+              <li class="social-media-item">
                 <a href="https://facebook.com"><span>Facebook</span></a>
-            </li>
-            <li class="social-media-item">
+              </li>
+              <li class="social-media-item">
                 <a href="https://youtube.com"><span>YouTube</span></a>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="site-author">
-          <span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <div class="site-author-wrapper">
+            <span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          </div>
         </section>
-    </footer>
+      </footer>
     </div>
   </body>
 </html>
