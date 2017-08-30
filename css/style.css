@@ -849,3 +849,20 @@ a {
     height: auto;
     display: flex;
 }
+
+.hotels {
+    height: 151px;
+    display: flex;
+}
+
+.rating {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.rating-wrapper {
+    width: 110px;
+    height: 27px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
