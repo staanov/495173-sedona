@@ -16,24 +16,26 @@ body {
 
 .mountain {
     width: 1200px;
-    min-height: 773px;
+    min-height: 500px;
     background-color: #2a3a49;
     background-image: url(../img/index-background.jpg);
-    background-position: 50% 0%;
+    background-position: 50% 21%;
     background-repeat: no-repeat;
     background-size: cover;
-    /*transform: translateY(-56px);*/
+    position: relative;
     z-index: 1;
 }
 
 .mountain-text {
+    position: relative;
     display: block;
     margin: 0 auto;
-    padding-top: 135px;
+    padding-top: 75px;
 }
 
 .mountain-mask {
     padding-top: 15px;
+    position: absolute;
 }
 
 a {
@@ -81,7 +83,6 @@ a {
 .content {
     text-align: center;
     line-height: 21px;
-    /*transform: translateY(-276px);*/
     position: relative;
     z-index: 2;
 }
@@ -121,7 +122,6 @@ a {
     width: 1200px;
     min-height: 291px;
     padding-top: 58px;
-    /*transform: translateY(-276px);*/
     position: relative;
     z-index: 2;
 }
@@ -244,7 +244,6 @@ a {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /*transform: translateY(-317px);*/
     position: relative;
     z-index: 1;
 }
@@ -304,16 +303,6 @@ a {
 .filter-form p {
     font-size: 14px;
     line-height: 21px;
-}
-
-.filter-form button {
-    color: white;
-    background-color: transparent;
-}
-
-.filter-form button:hover {
-    color: black;
-    background-color: white;
 }
 
 .search-result img {
@@ -435,115 +424,35 @@ a {
     background-color: #5496bd;
 }
 
-.social-media-item:first-child span {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 15px;
-    background-position: -130px -56px;
-    display: block;
+.logo-twitter:active {
+    fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-media-item:nth-child(2) span {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 22px;
-    background-position: -98px -5px;
-    display: block;
+.logo-facebook:active {
+    fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-media-item:last-child span {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 16px;
-    background-position: -211px -56px;
-    display: block;
+.logo-youtube:active {
+    fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-media-item:first-child span:hover {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 15px;
-    background-position: -184px -56px;
-    display: block;
-}
-
-.social-media-item:nth-child(2) span:hover {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 22px;
-    background-position: -142px -5px;
-    display: block;
-}
-
-.social-media-item:last-child span:hover {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 16px;
-    background-position: -130px -82px;
-    display: block;
-}
-
-.social-media-item:first-child span:active {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 15px;
-    background-position: -157px -56px;
-    display: block;
-}
-
-.social-media-item:nth-child(2) span:active {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 22px;
-    background-position: -120px -5px;
-    display: block;
-}
-
-.social-media-item:last-child span:active {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 16px;
-    background-position: -241px -56px;
-    display: block;
+.social-media-item a:active .logo-twitter,
+.social-media-item a:active .logo-facebook,
+.social-media-item a:active .logo-youtube {
+    fill: rgba(255, 255, 255, 0.3);
 }
 
 .site-author a {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 115px;
-    height: 41px;
-    background-position: -5px -37px;
     display: inline-block;
     vertical-align: middle;
 }
 
-.site-author a:hover {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 115px;
-    height: 41px;
-    background-position: -164px -5px;
-    display: inline-block;
-    vertical-align: middle;
+.logo-htmlacademy:hover {
+    fill: #81b3d2;
 }
 
-.site-author a:active {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 115px;
-    height: 41px;
-    background-position: -5px -88px;
-    display: inline-block;
-    vertical-align: middle;
+.logo-htmlacademy:active {
+    fill: #bdbbbc;
 }
 
 .arrival-input a,
@@ -611,7 +520,8 @@ a {
     min-height: 56px;
     display: flex;
     justify-content: flex-start;
-    align-content: stretch;
+    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
 }
 
@@ -643,7 +553,6 @@ a {
     min-height: 216px;
     position: relative;
     z-index: 2;
-    /*transform: translateY(-276px);*/
 }
 
 .intro-text b {
@@ -793,7 +702,6 @@ a {
 }
 
 .main-footer-index {
-    /*transform: translateY(-437px);*/
     position: relative;
     z-index: 2;
 }
@@ -843,6 +751,7 @@ a {
 .filter-form {
     min-height: 217px;
     display: flex;
+    padding-top: 32px;
     padding-left: 73px;
 }
 
@@ -850,9 +759,13 @@ a {
     border: none;
 }
 
-/*
+.filter-form fieldset:last-child {
+    margin-left: auto;
+}
+
 .filter-range {
-    width: 330px;
+    width: 317px;
+    text-transform: uppercase;
 }
 
 .filter-range-title {
@@ -863,29 +776,41 @@ a {
 }
 
 .price-controls {
+    position: relative;
     height: 36px;
     margin-bottom: 20px;
+    font-size: 0;
     border: 2px solid white;
     border-radius: 2px;
+}
+
+.price-controls::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 34px;
     vertical-align: top;
     cursor: pointer;
-    text-transform: uppercase;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
     width: 90px;
-    padding-left: 65px;
+    padding-left: 55px;
 }
 
 .price-controls input {
-    width: 50px;
+    width: 40px;
     margin: 0;
     color: inherit;
     font: inherit;
@@ -893,8 +818,65 @@ a {
     border: none;
     outline: none;
 }
-*/
-/*08:22 стилизация сложного фильтра Седоны*/
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: white;    
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.filter-range-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer
+}
+
+.filter-range-btn:hover {
+    color: black;
+    background-color: white;
+}
+
 
 .sorting {
     min-height: 86px;
