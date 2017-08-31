@@ -12,18 +12,17 @@ body {
 .container {
     margin: 0 auto;
     width: 1200px;
-    height: 2762px;
 }
 
 .mountain {
     width: 1200px;
-    height: 780px;
+    min-height: 773px;
     background-color: #2a3a49;
     background-image: url(../img/index-background.jpg);
-    background-position: top center;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translateY(-56px);
+    /*transform: translateY(-56px);*/
     z-index: 1;
 }
 
@@ -42,7 +41,7 @@ a {
 }
 
 .main-header {
-    height: 56px;
+    min-height: 56px;
     position: relative;
     z-index: 2;
 }
@@ -82,7 +81,7 @@ a {
 .content {
     text-align: center;
     line-height: 21px;
-    transform: translateY(-276px);
+    /*transform: translateY(-276px);*/
     position: relative;
     z-index: 2;
 }
@@ -91,7 +90,7 @@ a {
     text-align: center;
     background-color: white;
     width: 1200px;
-    height: 216px;
+    min-height: 216px;
 }
 
 .intro-text p {
@@ -120,9 +119,9 @@ a {
 
 .search-form-intro {
     width: 1200px;
-    height: 291px;
+    min-height: 291px;
     padding-top: 58px;
-    transform: translateY(-276px);
+    /*transform: translateY(-276px);*/
     position: relative;
     z-index: 2;
 }
@@ -174,7 +173,7 @@ a {
 
 .order-form {
     width: 571px;
-    height: 419px;
+    min-height: 419px;
     display: block;
     text-align: center;
     background-color: white;
@@ -245,7 +244,7 @@ a {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    transform: translateY(-317px);
+    /*transform: translateY(-317px);*/
     position: relative;
     z-index: 1;
 }
@@ -609,7 +608,7 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 56px;
+    min-height: 56px;
     display: flex;
     justify-content: flex-start;
     align-content: stretch;
@@ -619,7 +618,7 @@ a {
 .site-navigation li {
     display: block;
     width: 240px;
-    height: 56px;
+    min-height: 56px;
 }
 
 .site-navigation li:first-child {
@@ -641,16 +640,16 @@ a {
 }
 
 .intro-text {
-    height: 216px;
+    min-height: 216px;
     position: relative;
     z-index: 2;
-    transform: translateY(-276px);
+    /*transform: translateY(-276px);*/
 }
 
 .intro-text b {
     display: block;
     width: 440px;
-    height: 48px;
+    min-height: 48px;
     margin: 0 auto;
     padding-top: 60px;
 }
@@ -658,13 +657,13 @@ a {
 .intro-text p {
     display: block;
     width: 490px;
-    height: 13px;
+    min-height: 13px;
     margin: 0 auto;
     padding-top: 40px;
 }
 
 .reasons-blue {
-    height: 256px;
+    min-height: 256px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -690,24 +689,24 @@ a {
 
 .text-squeezer-1 {
     width: 280px;
-    height: 146px;
+    min-height: 146px;
     margin: 0 auto;
 }
 
 .text-squeezer-1 h3 {
     width: 133px;
-    height: 46px;
+    min-height: 46px;
     margin: 0 auto;
 }
 
 .text-squeezer-2 {
     width: 303px;
-    height: 142px;
+    min-height: 142px;
     margin: 0 auto;
 }
 
 .features {
-    height: 330px;
+    min-height: 330px;
     display: flex;
 }
 
@@ -718,7 +717,7 @@ a {
 
 .flat-item {
     width: 252px;
-    height: 81px;
+    min-height: 81px;
     margin: 0 auto;
 }
 
@@ -728,7 +727,7 @@ a {
 
 .food-item {
     width: 285px;
-    height: 79px;
+    min-height: 79px;
     margin: 0 auto;
 }
 
@@ -738,7 +737,7 @@ a {
 
 .gift-item {
     width: 273px;
-    height: 80px;
+    min-height: 80px;
     margin: 0 auto;
 }
 
@@ -747,7 +746,7 @@ a {
 }
 
 .other-reasons {
-    height: 256px;
+    min-height: 256px;
     display: flex;
 }
 
@@ -758,43 +757,43 @@ a {
 
 .third-reason {
     width: 208px;
-    height: 143px;
+    min-height: 143px;
     margin: 0 auto;
 }
 
 .third-reason h3 {
     width: 208px;
-    height: 48px;
+    min-height: 48px;
     margin: 0 auto;
 }
 
 .fourth-reason {
     width: 262px;
-    height: 142px;
+    min-height: 142px;
     margin: 0 auto;
 }
 
 .fourth-reason h3,
 .fifth-reason h3 {
     width: 111px;
-    height: 49px;
+    min-height: 49px;
     margin: 0 auto;
 }
 
 .fifth-reason {
     width: 260px;
-    height: 142px;
+    min-height: 142px;
     margin: 0 auto;
 }
 
 .main-footer {
-    height: 120px;
+    min-height: 120px;
     display: flex;
     background-color: rgba(248, 250, 245, 0.9);
 }
 
 .main-footer-index {
-    transform: translateY(-437px);
+    /*transform: translateY(-437px);*/
     position: relative;
     z-index: 2;
 }
@@ -816,25 +815,25 @@ a {
 
 .visit-sedona-wrapper {
     width: 136px;
-    height: 16px;
+    min-height: 16px;
     margin: 0 auto;
 }
 
 .social-media-wrapper {
     width: 150px;
-    height: 48px;
+    min-height: 48px;
     margin: 0 auto;
 }
 
 .site-author-wrapper {
     width: 200px;
-    height: 41px;
+    min-height: 41px;
     margin: 0 auto;
 }
 
 .social-media-list {
     width: 150px;
-    height: 48px;
+    min-height: 48px;
     display: flex;
     margin: 0;
     padding: 0;
@@ -842,7 +841,7 @@ a {
 }
 
 .filter-form {
-    height: 217px;
+    min-height: 217px;
     display: flex;
     padding-left: 73px;
 }
@@ -898,7 +897,7 @@ a {
 /*08:22 стилизация сложного фильтра Седоны*/
 
 .sorting {
-    height: 86px;
+    min-height: 86px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -906,12 +905,12 @@ a {
 }
 
 .sorting-list {
-    height: auto;
+    min-height: auto;
     display: flex;
 }
 
 .hotels {
-    height: 151px;
+    min-height: 151px;
     display: flex;
     border: 2px solid #e5e5e5;
     border-collapse: collapse;
@@ -937,7 +936,7 @@ a {
 
 .rating-wrapper {
     width: 110px;
-    height: 27px;
+    min-height: 27px;
     margin: 0 auto;
     background-color: #f2f2f2;
 }
