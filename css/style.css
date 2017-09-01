@@ -125,7 +125,7 @@ a {
 
 .search-form-intro {
     width: 1200px;
-    min-height: 291px;
+    min-height: 250px;
     padding-top: 58px;
     position: relative;
     z-index: 2;
@@ -188,7 +188,7 @@ a {
     display: block;
     text-align: center;
     position: absolute;
-    top: 22px;
+    top: 18px;
     left: 315px;
     background-color: white;
     z-index: 2;
@@ -571,6 +571,8 @@ a {
     display: block;
     width: 440px;
     min-height: 48px;
+    font-size: 21px;
+    line-height: 26px;
     margin: 0 auto;
     padding-top: 60px;
 }
@@ -579,8 +581,10 @@ a {
     display: block;
     width: 490px;
     min-height: 13px;
+    font-size: 14px;
+    line-height: 26px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 27px;
 }
 
 .reasons-blue {
@@ -623,6 +627,8 @@ a {
 .text-squeezer-1 h3 {
     width: 133px;
     min-height: 46px;
+    font-size: 21px;
+    line-height: 21px;
     margin: 0 auto;
 }
 
@@ -630,6 +636,11 @@ a {
     width: 303px;
     min-height: 142px;
     margin: 0 auto;
+}
+
+.text-squeezer-2 h3 {    
+    font-size: 21px;
+    line-height: 21px;
 }
 
 .features {
@@ -691,6 +702,8 @@ a {
 .third-reason h3 {
     width: 208px;
     min-height: 48px;
+    font-size: 21px;
+    line-height: 21px;
     margin: 0 auto;
 }
 
@@ -704,6 +717,8 @@ a {
 .fifth-reason h3 {
     width: 111px;
     min-height: 49px;
+    font-size: 21px;
+    line-height: 21px;
     margin: 0 auto;
 }
 
