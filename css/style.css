@@ -143,7 +143,7 @@ a {
     line-height: 24px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 89px;
+    margin-bottom: 80px;
 }
 
 .search-form-intro a {
@@ -151,8 +151,8 @@ a {
     background-color: #766357;
     background-size: cover; 
     text-align: center;
-    padding-top: 35px;
-    padding-bottom: 36px;
+    padding-top: 30px;
+    padding-bottom: 28px;
     padding-left: 141px;
     padding-right: 140px;
     margin-left: 316px;
@@ -253,7 +253,7 @@ a {
     height: 593px;
     background-color: white;
     background-image: url(../img/map.jpg);
-    background-position: top center;
+    background-position: 50% -21%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -663,6 +663,13 @@ a {
     content: url(../img/icon-1-flat.svg);
 }
 
+.flat-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
 .food-item {
     width: 285px;
     min-height: 79px;
@@ -673,6 +680,13 @@ a {
     content: url(../img/icon-2-food.svg);
 }
 
+.food-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
 .gift-item {
     width: 273px;
     min-height: 80px;
@@ -681,6 +695,13 @@ a {
 
 .gift-item::before {
     content: url(../img/icon-3-gift.svg);
+}
+
+.gift-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .other-reasons {
@@ -782,7 +803,7 @@ a {
 }
 
 .filter-form {
-    min-height: 217px;
+    min-height: 185px;
     display: flex;
     padding-top: 32px;
     padding-left: 73px;
@@ -910,7 +931,6 @@ a {
     background-color: white;
 }
 
-
 .sorting {
     min-height: 86px;
     display: flex;
@@ -925,7 +945,7 @@ a {
 }
 
 .hotels {
-    min-height: 151px;
+    min-height: 148px;
     display: flex;
     border: 2px solid #e5e5e5;
     border-collapse: collapse;
