@@ -12,6 +12,9 @@ body {
 .container {
     margin: 0 auto;
     width: 1200px;
+    box-shadow: 
+        100px 0 3px 0 #f2f2f2,
+        -100px 0 3px 0 #f2f2f2;
 }
 
 .mountain {
@@ -125,7 +128,7 @@ a {
 
 .search-form-intro {
     width: 1200px;
-    min-height: 250px;
+    min-height: 233px;
     padding-top: 58px;
     position: relative;
     z-index: 2;
@@ -188,7 +191,7 @@ a {
     display: block;
     text-align: center;
     position: absolute;
-    top: 18px;
+    top: 0;
     left: 315px;
     background-color: white;
     z-index: 2;
@@ -250,28 +253,25 @@ a {
 
 .map {
     width: 1200px;
-    height: 593px;
+    min-height: 593px;
     background-color: white;
     background-image: url(../img/map.jpg);
-    background-position: 50% -21%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     z-index: 1;
 }
 
-.social-media-list {
-    list-style: none;
-}
-
-.social-media-list span {
-    color: black;
-    width: 16px;
-    height: 17px;
-    position: absolute;
+.map-wrapper {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, 20%);
+    z-index: 1;
+}
+
+.social-media-list {
+    list-style: none;
 }
 
 .visit-sedona a {
@@ -413,6 +413,36 @@ a {
 .hotel-order:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
+}
+
+.social-media-list .twitter-wrapper {
+    color: black;
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+}
+
+.social-media-list .facebook-wrapper {
+    color: black;
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.social-media-list .youtube-wrapper {
+    color: black;
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -190%);
 }
 
 .social-media-item a {
@@ -750,12 +780,15 @@ a {
 }
 
 .main-footer {
+    width: 1200px;
     min-height: 120px;
     display: flex;
     background-color: rgba(248, 250, 245, 0.9);
+    z-index: 2;
 }
 
 .main-footer-index {
+    width: 1200px;
     position: relative;
     z-index: 2;
 }
