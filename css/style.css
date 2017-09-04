@@ -237,8 +237,20 @@ a {
 }
 
 .submit-button {
+    display: block;
     color: white;
     background-color: #81b3d2;
+    background-size: cover; 
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 23px;
+    padding-left: 196px;
+    padding-right: 198px;
+    margin-top: 56px;
+    margin-left: 55px;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .submit-button:hover {
@@ -494,40 +506,41 @@ a {
     fill: #bdbbbc;
 }
 
+.arrival-input label,
+.departure-input label {
+    cursor: pointer;
+}
+
 .arrival-input a,
 .departure-input a {
     background-color: transparent;
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 21px;
-    height: 22px;
-    background-position: -5px -5px;
+    fill: #cacaca;
     display: inline-block;
     position: absolute;
 }
 
 .arrival-input a:hover,
 .departure-input a:hover {
-    background-color: transparent;
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 21px;
-    height: 22px;
-    background-position: -67px -5px;
-    display: inline-block;
-    position: absolute;
+    fill: #000000;
 }
 
 .arrival-input a:active,
 .departure-input a:active {
-    background-color: transparent;
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    width: 21px;
-    height: 22px;
-    background-position: -36px -5px;
+    fill: #81b3d2;
+}
+
+.arrival-input {
+    margin-top: 57px;
+}
+
+.departure-input {
+    margin-top: 30px;
+}
+
+.adult-input,
+.child-input {
+    margin-top: 30px;
     display: inline-block;
-    position: absolute;
 }
 
 .site-author span {
