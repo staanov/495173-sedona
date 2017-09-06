@@ -32,16 +32,25 @@
                 <legend>Инфраструктура:</legend>
                 <ul class="infrastructure-list">
                   <li>
-                    <input type="checkbox" id="pool" checked>
-                    <label for="pool">Бассейн</label>
+                    <label for="pool" class="checkbox-input">
+                      <input type="checkbox" id="pool" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                      Бассейн
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="parking">
-                    <label for="parking">Парковка</label>
+                    <label for="parking" class="checkbox-input">
+                      <input type="checkbox" id="parking" class="visually-hidden">
+                      <span class="checkbox-indicator"></span>    
+                      Парковка
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="wi-fi">
-                    <label for="wi-fi">Wi-Fi</label>
+                    <label for="wi-fi" class="checkbox-input">
+                      <input type="checkbox" id="wi-fi" class="visually-hidden">
+                      <span class="checkbox-indicator"></span>
+                      Wi-Fi
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -49,16 +58,25 @@
                 <legend>Тип жилья:</legend>
                 <ul class="hotel-type-list">
                   <li>
-                    <input type="checkbox" id="hotel" checked>
-                    <label for="hotel">Гостиница</label>
+                    <label for="hotel" class="checkbox-input">
+                      <input type="checkbox" id="hotel" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                      Гостиница
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="motel" checked>
-                    <label for="motel">Мотель</label>
+                    <label for="motel" class="checkbox-input">
+                      <input type="checkbox" id="motel" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                      Мотель
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="apartments" checked>
-                    <label for="apartments">Апартаменты</label>
+                    <label for="apartments" class="checkbox-input">
+                      <input type="checkbox" id="apartments" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                      Апартаменты
+                    </label>
                   </li>
                 </ul>
              </fieldset>
@@ -103,13 +121,20 @@
       </section>
       <section class="search-result">
         <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
-        <article class="hotels">
+        <article class="hotels amara-hotel">
           <img src="img/amara-hotel.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort">
           <div class="hotels-text-content">
             <h1><a href="#" class="hotel-title">Amara Resort &amp; Spa</a></h1>
-            <p>Гостиница &nbsp; От 4000 р.</p>
-            <a href="#" class="hotel-about">Подробнее</a>
-            <a href="#" class="hotel-order">Забронировать</a>
+            <div class="hotels-text-cols">
+              <div class="hotels-text-col-1">
+                <p>Гостиница</p>
+                <a href="#" class="hotel-about">Подробнее</a>
+              </div>
+              <div class="hotels-text-col-2">
+                <p>От 4000 р.</p>
+                <a href="#" class="hotel-order">Забронировать</a>
+              </div>
+            </div>
           </div>
           <div class="rating rating-amara">
             <div class="rating-wrapper">
@@ -117,13 +142,20 @@
             </div>
           </div>
         </article>
-        <article class="hotels">
+        <article class="hotels desert-hotel">
           <img src="img/desert-hotel.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
           <div class="hotels-text-content">
             <h1><a href="#" class="hotel-title">Desert Quail Inn</a></h1>
-            <p>Мотель &nbsp; От 3000 р.</p>
-            <a href="#" class="hotel-about">Подробнее</a>
-            <a href="#" class="hotel-order">Забронировать</a>
+            <div class="hotels-text-cols">
+              <div class="hotels-text-col-1">
+                <p>Мотель</p>
+                <a href="#" class="hotel-about">Подробнее</a>
+              </div>
+              <div class="hotels-text-col-2">
+                <p>От 3000 р.</p>
+                <a href="#" class="hotel-order">Забронировать</a>
+              </div>
+            </div>
           </div>
           <div class="rating rating-desert">
             <div class="rating-wrapper">
@@ -131,13 +163,20 @@
             </div>
           </div>
         </article>
-        <article class="hotels">
+        <article class="hotels villas-hotel">
           <img src="img/villas-hotel.jpg" width="135" height="90" alt="Фото апартаментов Villas At Poco Diablo">
           <div class="hotels-text-content">
             <h1><a href="#" class="hotel-title">Villas At Poco Diablo</a></h1>
-            <p>Апартаменты &nbsp; От 2000 р.</p>
-            <a href="#" class="hotel-about">Подробнее</a>
-            <a href="#" class="hotel-order">Забронировать</a>
+            <div class="hotels-text-cols">
+              <div class="hotels-text-col-1">
+                <p>Апартаменты</p>
+                <a href="#" class="hotel-about">Подробнее</a>
+              </div>
+              <div class="hotels-text-col-2">
+                <p>От 2000 р.</p>
+                <a href="#" class="hotel-order">Забронировать</a>
+              </div>
+            </div>
           </div>
           <div class="rating rating-villas">
             <div class="rating-wrapper">
