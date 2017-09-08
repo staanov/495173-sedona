@@ -679,86 +679,108 @@ a {
 }
 
 .adult-input label {
+    margin-top: 5px;
     margin-left: 10px;
-    margin-right: 24px;
+    margin-right: 45px;
 }
 
 .child-input label {
-    margin-right: 15px;
+    margin-top: 5px;
+    margin-right: 30px;
 }
 
 .adult-input input {
-    width: 118px;
+    width: 50px;
     height: 38px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: none;
     text-align: center;
-    margin-left: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .child-input input {
-    width: 114px;
+    width: 48px;
     height: 38px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: none;
     text-align: center;
-    margin-left: 5px;
-    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.adult-and-child-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .adult-input {
+    width: 270px;
     margin-top: 29px;
-    margin-right: 30px;
-    display: inline-block;
+    margin-right: 24px;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     position: relative;
+    left: -20px;
 }
 
 .child-input {
+    width: 190px;
     margin-top: 29px;
     margin-left: 20px;
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     position: relative;
+    left: -25px;
 }
 
 .adult-input button {
     width: 30px;
     height: 38px;
-    position: absolute;
+    position: relative;
     cursor: pointer;
-    background-color: transparent;
+    background-color: #f2f2f2;
     border-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .child-input button {
     width: 30px;
     height: 38px;
-    position: absolute;
+    position: relative;
     cursor: pointer;
-    background-color: transparent;
+    background-color: #f2f2f2;
     border-color: transparent;
-}
-
-.adult-input .minus-btn {
-    left: 125px;
-}
-
-.adult-input .plus-btn {
-    right: 7px;
-}
-
-.child-input .minus-btn {
-    left: 65px;
-}
-
-.child-input .plus-btn {
-    right: 15px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .adult-input .minus-btn::before {
     content: "";
     position: absolute;
+    margin: 0 auto;
     top: 15px;
     right: 5px;
     width: 12px;
@@ -770,8 +792,9 @@ a {
 .adult-input .plus-btn::after {
     content: "";
     position: absolute;
+    margin: 0 auto;
     top: 15px;
-    right: 5px;
+    right: 10px;
     width: 12px;
     height: 3px;
     background-color: #a9a9a9;
@@ -780,6 +803,7 @@ a {
 .child-input .minus-btn::before {
     content: "";
     position: absolute;
+    margin: 0 auto;
     top: 15px;
     right: 5px;
     width: 12px;
@@ -791,8 +815,9 @@ a {
 .child-input .plus-btn::after {
     content: "";
     position: absolute;
+    margin: 0 auto;
     top: 15px;
-    right: 5px;
+    right: 8px;
     width: 12px;
     height: 3px;
     background-color: #a9a9a9;
@@ -1012,9 +1037,13 @@ a {
 }
 
 .flat-item::before {
-    content: url(../img/icon-1-flat.svg);
+    content: "";
     width: 75px;
     height: 72px;
+    background-image: url(../img/icon-1-flat.svg);
+    display: table;
+    margin-top: -2px;
+    margin-left: 88px;
 }
 
 .flat-item h3 {
@@ -1035,10 +1064,14 @@ a {
 }
 
 .food-item::before {
-    content: url(../img/icon-2-food.svg);
-    padding-right: 5px;
+    content: "";
     width: 74px;
     height: 70px;
+    background-image: url(../img/icon-2-food.svg);
+    display: table;
+    margin-top: -1px;
+    margin-left: 101px;
+    padding-right: 5px;
 }
 
 .food-item h3 {
@@ -1059,19 +1092,23 @@ a {
 }
 
 .gift-item::before {
-    content: url(../img/icon-3-gift.svg);
+    content: "";
+    width: 64px;
+    height: 76px;
+    background-image: url(../img/icon-3-gift.svg);
+    display: table;
+    margin-top: 8px;
+    margin-left: 105px;
     -webkit-transform: translateY(-15px);
         -ms-transform: translateY(-15px);
             transform: translateY(-15px);
-    width: 64px;
-    height: 76px;
 }
 
 .gift-item h3 {
     font-size: 21px;
     line-height: 21px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 .gift-item p {
@@ -1517,7 +1554,7 @@ a {
 
 .dir {
     margin-left: auto;
-    margin-top: auto;
+    margin-top: 22px;
     margin-bottom: 31px;
     margin-right: 73px;
 }
