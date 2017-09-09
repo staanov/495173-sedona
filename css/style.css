@@ -51,7 +51,8 @@ a {
 }
 
 .main-header {
-    height: 56px;
+    display: block;
+    height: 55px;
     position: relative;
     z-index: 2;
 }
@@ -327,7 +328,7 @@ a {
     color: white;
     background-color: #2a3c46;
     background-image: url(../img/filter-background.jpg);
-    background-position: 50% 20%;
+    background-position: 50% 17%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -367,7 +368,6 @@ a {
 }
 
 .sorting b {
-    margin-top: 2px;
     margin-right: 4px;
 }
 
@@ -421,15 +421,15 @@ a {
 }
 
 .amara-hotel h1 {
-    margin-top: 25px;
+    margin-top: 24px;
 }
 
 .desert-hotel h1 {
-    margin-top: 25px;
+    margin-top: 24px;
 }
 
 .villas-hotel h1 {
-    margin-top: 25px;
+    margin-top: 24px;
 }
 
 .hotels p {
@@ -872,10 +872,6 @@ a {
             transform: translateY(6px);
 }
 
-.main-header {
-    display: block;
-}
-
 .sedona-logo {
     width: 138px;
     height: 70px;
@@ -1313,8 +1309,7 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 25px;
-    padding-left: 55px;
+    padding-top: 27px;
 }
 
 .filter-form fieldset {
@@ -1322,15 +1317,21 @@ a {
 }
 
 .filter-form fieldset:first-child {
-    margin-left: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 72px;
 }
 
 .filter-form fieldset:nth-child(2) {
-    margin-left: 90px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 115px;
 }
 
 .filter-form fieldset:last-child {
-    margin-left: 322px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 349px;
 }
 
 .infrastructure-list,
@@ -1362,7 +1363,7 @@ a {
 
 .checkbox-input input + .checkbox-indicator {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -40px;
     width: 23px;
     height: 23px;
@@ -1372,7 +1373,7 @@ a {
 
 .checkbox-input input:checked + .checkbox-indicator {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -40px;
     width: 27px;
     height: 23px;
@@ -1552,9 +1553,11 @@ a {
 }
 
 .filter-range-btn {
+    width: 137px;
+    height: 36px;
     display: block;
     margin: 0 auto;
-    padding: 6px 34px;
+    padding: 0;
     margin-left: 85px;
     font-size: 14px;
     line-height: 21px;
@@ -1564,7 +1567,7 @@ a {
     border: 2px solid white;
     border-radius: 2px;
     outline: none;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .filter-range-btn:hover {
@@ -1668,6 +1671,7 @@ a {
     background-image: url(../img/star.svg);
     background-repeat: no-repeat;
     margin-left: 1px;
+    padding: 0;
     display: inline-block;
 }
 
