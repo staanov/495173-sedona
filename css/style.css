@@ -51,7 +51,7 @@ a {
 }
 
 .main-header {
-    min-height: 56px;
+    height: 56px;
     position: relative;
     z-index: 2;
 }
@@ -327,7 +327,7 @@ a {
     color: white;
     background-color: #2a3c46;
     background-image: url(../img/filter-background.jpg);
-    background-position: 50% 21%;
+    background-position: 50% 20%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -419,11 +419,11 @@ a {
 }
 
 .desert-hotel h1 {
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .villas-hotel h1 {
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .hotels p {
@@ -1297,7 +1297,7 @@ a {
 }
 
 .filter-form {
-    min-height: 192px;
+    height: 191px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1311,12 +1311,16 @@ a {
     border: none;
 }
 
+.filter-form fieldset:first-child {
+    margin-left: 4px;
+}
+
 .filter-form fieldset:nth-child(2) {
     margin-left: 90px;
 }
 
 .filter-form fieldset:last-child {
-    margin-left: 325px;
+    margin-left: 322px;
 }
 
 .infrastructure-list,
@@ -1346,61 +1350,10 @@ a {
     cursor: pointer;
 }
 
-.pool {
-    top: -2px;
-}
-
-.checkbox-input input + .pool-checkbox {
-    left: -38px;
-}
-
-.parking {
-    top: 2px;
-}
-
-.checkbox-input input + .parking-checkbox {
-    left: -38px;
-}
-
-.wi-fi {
-    top: 2px;
-}
-
-.checkbox-input input + .wi-fi-checkbox {
-    left: -38px;
-}
-
-.hotel {
-    left: 4px;
-    bottom: 2px;
-}
-
-.checkbox-input input + .hotel-checkbox {
-    left: -30px;
-}
-
-.motel {
-    left: 4px;
-    top: 2px;
-}
-
-.checkbox-input input + .motel-checkbox {
-    left: -30px;
-}
-
-.apartments {
-    left: 4px;
-    top: 2px;
-}
-
-.checkbox-input input + .apartments-checkbox {
-    left: -30px;
-}
-
 .checkbox-input input + .checkbox-indicator {
     position: absolute;
     top: 0;
-    left: -37px;
+    left: -40px;
     width: 23px;
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
@@ -1410,7 +1363,7 @@ a {
 .checkbox-input input:checked + .checkbox-indicator {
     position: absolute;
     top: 0;
-    left: -37px;
+    left: -40px;
     width: 27px;
     height: 23px;
     background-image: url(../img/checkbox-on.svg);
@@ -1419,8 +1372,8 @@ a {
 
 .checkbox-input input:disabled + .checkbox-indicator {
     position: absolute;
-    top: 0;
-    left: -37px;
+    top: -2px;
+    left: -40px;
     width: 23px;
     height: 23px;
     background-image: url(../img/disabled-checkbox-off.svg);
@@ -1429,12 +1382,39 @@ a {
 
 .checkbox-input input:checked:disabled + .checkbox-indicator {
     position: absolute;
-    top: 0;
-    left: -37px;
+    top: -2px;
+    left: -40px;
     width: 27px;
     height: 23px;
     background-image: url(../img/disabled-checkbox-on.svg);
     background-repeat: no-repeat;
+}
+
+.pool {
+    top: -2px;
+}
+
+.parking {
+    top: 2px;
+}
+
+.wi-fi {
+    top: 4px;
+}
+
+.hotel {
+    left: 2px;
+    bottom: 2px;
+}
+
+.motel {
+    left: 2px;
+    top: 2px;
+}
+
+.apartments {
+    left: 2px;
+    top: 4px;
 }
 
 .filter-range {
@@ -1489,11 +1469,13 @@ a {
 }
 
 .price-controls .min-price {
-    padding-left: 62px;
+    padding-left: 63px;
+    padding-top: 1px;
 }
 
 .price-controls .max-price {
-    padding-left: 55px;
+    padding-left: 57px;
+    padding-top: 1px;
 }
 
 .price-controls input {
@@ -1681,7 +1663,7 @@ a {
 
 .dir {
     margin-left: auto;
-    margin-top: 22px;
+    margin-top: 26px;
     margin-bottom: 31px;
     margin-right: 73px;
 }
