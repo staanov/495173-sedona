@@ -342,6 +342,10 @@ a {
     line-height: 21px;
 }
 
+.infrastructure legend {
+    letter-spacing: 0.2px;
+}
+
 .filter-form label {
     font-size: 14px;
     line-height: 21px;
@@ -1327,21 +1331,24 @@ a {
 }
 
 .filter-form fieldset:first-child {
+    width: 140px;
     padding-left: 0;
     padding-right: 0;
     margin-left: 72px;
 }
 
 .filter-form fieldset:nth-child(2) {
+    width: 140px;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 115px;
+    margin-left: 112px;
 }
 
 .filter-form fieldset:last-child {
+    width: 317px;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 349px;
+    margin-left: 343px;
 }
 
 .infrastructure-list,
