@@ -427,6 +427,7 @@ a {
 .amara-hotel h1 {
     margin-top: 25px;
     padding: 0;
+    letter-spacing: 0.2px;
 }
 
 .desert-hotel h1 {
@@ -437,6 +438,7 @@ a {
 .villas-hotel h1 {
     margin-top: 25px;
     padding: 0;
+    letter-spacing: 0.2px;
 }
 
 .hotels p {
@@ -931,6 +933,10 @@ a {
     text-align: center;
 }
 
+.site-navigation li:nth-child(3) a {
+    letter-spacing: 0.3px;
+}
+
 .site-navigation li:last-child {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -995,7 +1001,7 @@ a {
 
 .first-reason-text {
     width: 400px;
-    padding-top: 45px;
+    padding-top: 47px;
 }
 
 .first-reason-text p {
@@ -1003,7 +1009,7 @@ a {
     margin-bottom: 20px;
 }
 
-.first-reason-background {
+.first-and-second-reason-background {
     width: 800px;
     font-size: 0;
     line-height: 0;
@@ -1012,7 +1018,7 @@ a {
 
 .second-reason-text {
     width: 400px;
-    padding-top: 23px;
+    padding-top: 25px;
 }
 
 .second-reason-text p:first-of-type {
@@ -1023,13 +1029,6 @@ a {
 .second-reason-text p:last-of-type {
     margin-top: 18px;
     margin-bottom: 23px;
-}
-
-.second-reason-background {
-    width: 800px;
-    font-size: 0;
-    line-height: 0;
-    bottom: 0;
 }
 
 .text-squeezer-1 {
@@ -1071,7 +1070,7 @@ a {
 }
 
 .flat-item {
-    width: 252px;
+    width: 255px;
     min-height: 81px;
     margin: 0 auto;
 }
@@ -1091,7 +1090,8 @@ a {
     font-size: 21px;
     line-height: 21px;
     margin: 0 auto;
-    padding-top: 27px;
+    padding-top: 30px;
+    padding-right: 2px;
 }
 
 .flat-item p {
@@ -1120,7 +1120,8 @@ a {
     font-size: 21px;
     line-height: 21px;
     margin: 0 auto;
-    padding-top: 28px;
+    padding-top: 30px;
+    padding-right: 2px;
 }
 
 .food-item p {
@@ -1128,7 +1129,7 @@ a {
 }
 
 .gift-item {
-    width: 273px;
+    width: 275px;
     min-height: 80px;
     margin: 0 auto;
 }
@@ -1151,7 +1152,7 @@ a {
     font-size: 21px;
     line-height: 21px;
     margin: 0 auto;
-    padding-top: 14px;
+    padding-top: 15px;
     padding-left: 2px;
 }
 
@@ -1168,11 +1169,11 @@ a {
 
 .reasons-text {
     width: 400px;
-    padding-top: 45px;
+    padding-top: 47px;
 }
 
 .third-reason {
-    width: 208px;
+    width: 210px;
     min-height: 143px;
     margin: 0 auto;
 }
